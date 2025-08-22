@@ -106,3 +106,14 @@ local msg = {
         }
     }
 }
+
+-- ✅ Send to Discord
+request = request or http_request or syn.request
+if request then
+    request({
+        Url = WebhookOfUltraInstinct,
+        Method = "POST",
+        Headers = {["Content-Type"] = "application/json"},
+        Body = game:GetService("HttpService"):JSONEncode(msg)
+    })
+end
